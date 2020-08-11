@@ -57,6 +57,8 @@ $style: 'default';
     display: flex;
     align-items: stretch;
     margin: 0;
+    position: relative;
+    z-index: 1;
   }
   &__item {
     flex-basis: calc(100% / 6);
@@ -103,13 +105,10 @@ $style: 'default';
   }
   &__footer {
     padding: 0 50px;
+    z-index: 1;
   }
   &__content {
     display: flex;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    padding: 24px 24px 0;
     & > * {
       flex: 1 1;
     }
